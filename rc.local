@@ -1,0 +1,7 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+#set correct time                
+ntpd -dN -p0.openwrt.pool.ntp.org   
+cd /root/ && sh probe-monitor.sh
+exit 0
