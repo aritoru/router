@@ -8,7 +8,7 @@ config global
 	option check_fs '0'
 
 config mount
-	option enabled '0'
+	option enabled '1'
 	option device '/dev/sda6'
 	option target '/mnt/share'
 	option fstype 'ext4'

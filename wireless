@@ -15,7 +15,7 @@ config wifi-iface
 	option mode 'ap'
 	option disassoc_low_ack '0'
 	option encryption 'psk2'
-	option ssid 'gennion_test3'
+	option ssid 'gennion_test2'
 	option network 'lan wan'
 	option key 'gennion123!'
 

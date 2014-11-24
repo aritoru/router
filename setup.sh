@@ -11,6 +11,7 @@ mkdir -p /etc/config
 cp * /etc/config
 rm /etc/config/*.sh
 
-
+#Perform Reboot
+reboot
 
 
