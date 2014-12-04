@@ -3,5 +3,6 @@
 
 #set correct time                
 ntpd -dN -p0.openwrt.pool.ntp.org   
+mount -t ext4 /dev/sda6 /mnt/share -o rw,sync
 cd /root/ && sh probe-monitor.sh
 exit 0

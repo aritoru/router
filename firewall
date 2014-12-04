@@ -97,3 +97,12 @@ config include 'miniupnpd'
 	option family 'any'
 	option reload '1'
 
+#Allow SSH                                  
+config rule                                    
+        option name 'Allow-IPV4-SSH'            
+        option src 'wan'                                   
+        option proto 'tcp'            
+        option dest_port '22'      
+        option family 'ipv4'                
+        option target 'ACCEPT'
+
