@@ -1,0 +1,19 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+# set global variables
+cd /root/ && sh config.sh
+
+# set correct time    
+cd /root/ && sh connect-as-client.sh            
+ntpd -dN -p0.openwrt.pool.ntp.org   
+
+# install tcpdumo
+cd /root/ && sh opkg.sh
+
+# mount device
+mount -t ext4 /dev/sda6 /mnt/share -o rw,sync
+
+# launch sniffer
+cd /root/ && sh probe-monitor.sh
+exit 0

@@ -16,5 +16,5 @@ config wifi-iface
 	option device 'radio0'
 	option mode 'sta'
 	option bssid '10:FE:ED:AC:48:48'
-	option key '61358805'
-	option ssid 'Gennion'
+	option key '%%WIFI_CLIENT_PASS%%'
+	option ssid '%%WIFI_CLIENT_SSID%%'
