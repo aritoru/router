@@ -8,7 +8,7 @@ cd /root/ && sh config.sh
 cd /root/ && sh connect-as-client.sh            
 ntpd -dN -p0.openwrt.pool.ntp.org   
 
-# install tcpdumo
+# install packages
 cd /root/ && sh opkg.sh
 
 # mount device
