@@ -13,22 +13,30 @@ http://edwardkeeble.com/2014/02/passive-wifi-tracking/
 1.2. Firmware
 Custom OpenWrt image with LuCi integrated
 http://www.superwrt.eu/en/firmware/tp-link-wr710n/
+
+
 2. Instalación y primeros pasos
 2.0 USB Drive Format
 Usando GParted debemos hacer dos particiones en el drive USB:
 * Una partición extendida ocupando todo el tamaño del disco (SDA1)
 * Una partición lógica ext3 ocupando 1GB del disco (SDA5)
 * Una partición lógica ext3 ocupando el resto del disco (SDA6)
-
-
 Si existieran particiones anteriores, eliminarlas.
+
+
 2.1. Firmware Flash
 Se recomienda seguir la siguiente guía:
 http://www.superwrt.eu/en/first-installation/
-
-
 Se puede encontrar la imagen en la carpeta “Install” de este proyecto.
+
+
+
 2.2. Configuración
+
+Accedemos a la GUI interna del router mediante http://192.168.1.1 y establemos una pass de admin.
+
+Editamos el archivo scripts/config.sh para poner los parámetros de este router
+
 Asumiendo que estemos conectados al router:
 
 

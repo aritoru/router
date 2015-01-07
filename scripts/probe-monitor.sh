@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#set correct time                
-ntpd -dN -p0.openwrt.pool.ntp.org   
-                                    
+cd /root/ && sh connect-as-beacon.sh
+sleep 20
+
 #launch probe sniffer                                               
 until [$(sh probe.sh)]; do                                          
     echo "Probe Script crashed with exit code $?.  Respawning.." >&2
