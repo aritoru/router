@@ -33,6 +33,6 @@ rm /etc/config/*.sh
 
 # Perform Initialization
 echo 'Starting...'
-sh /etc/rc.local
+sh /etc/rc.local &
 
 
