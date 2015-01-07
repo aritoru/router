@@ -1,0 +1,2 @@
+# run this script every hour
+01 * * * * cd /root/ && sh dump-data.sh > /dev/null

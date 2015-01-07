@@ -5,7 +5,8 @@
 cd /root/ && sh config.sh
 
 # set correct time    
-cd /root/ && sh connect-as-client.sh            
+cd /root/ && sh connect-as-client.sh
+sleep 20
 ntpd -dN -p0.openwrt.pool.ntp.org   
 
 # install packages
@@ -13,6 +14,9 @@ cd /root/ && sh opkg.sh
 
 # mount device
 mount -t ext4 /dev/sda6 /mnt/share -o rw,sync
+
+# start crond
+/etc/init.d/S60cron
 
 # launch sniffer
 cd /root/ && sh probe-monitor.sh
