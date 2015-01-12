@@ -7,7 +7,10 @@ cd /root/ && sh config.sh
 # set correct time    
 cd /root/ && sh connect-as-client.sh
 sleep 20
-ntpd -dN -p0.openwrt.pool.ntp.org   
+ntpd -dN -p0.openwrt.pool.ntp.org
+
+#check for conectivity
+cd /root/ && sh check-connection.sh
 
 # install packages
 cd /root/ && sh opkg.sh
