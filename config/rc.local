@@ -12,6 +12,9 @@ ntpd -dN -p0.openwrt.pool.ntp.org
 #check for conectivity
 cd /root/ && sh check-connection.sh
 
+# Log reboot
+cd /root/ && sh log-power.sh
+
 # install packages
 cd /root/ && sh opkg.sh
 

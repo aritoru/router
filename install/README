@@ -33,7 +33,7 @@ Se puede encontrar la imagen en la carpeta “Install” de este proyecto.
 
 2.2. Configuración
 
-Accedemos a la GUI interna del router mediante http://192.168.1.1 y establemos una pass de admin.
+Accedemos a la GUI interna del router mediante http://192.168.1.1 y establecemos una pass de admin.
 
 Editamos el archivo scripts/config.sh para poner los parámetros de este router
 

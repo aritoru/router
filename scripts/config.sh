@@ -10,4 +10,8 @@ export wifi_beacon_SSID=gennion_test
 export wifi_client_SSID=Gennion
 export wifi_client_PASS=61358805
 
+#server settings
+export serverUser=root
+export serverUrl=nutshell.gennion.com
+
 

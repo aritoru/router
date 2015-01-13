@@ -4,7 +4,7 @@ sh stop.sh
 sh connect-as-client.sh
 sleep 20
 
-#check for conectivity
+#check for connectivity
 cd /root/ && sh check-connection.sh
 
 sh send-data.sh
