@@ -3,9 +3,6 @@
 # Import vars
 . ./config.sh
 
-# Increment Sequence
-sh set-sequence.sh
-
 # Add a wifi interface with "monitor" enabled
 iw dev wlan0 interface add fish0 type monitor flags none
 ifconfig fish0 up
