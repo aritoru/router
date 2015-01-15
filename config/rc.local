@@ -12,6 +12,11 @@ ntpd -dN -p0.openwrt.pool.ntp.org
 #check for conectivity
 cd /root/ && sh check-connection.sh
 
+#Creating mount point folders
+mkdir -p /mnt/share/logs
+mkdir -p /mnt/share/now
+mkdir -p /mnt/share/old
+
 # Log reboot
 cd /root/ && sh log-power.sh
 

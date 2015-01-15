@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Router ID
-export router_ID="NS-006"
+export router_ID="NS006"
 
 # WiFi Beacon. Esta es la SSID que se emite cuando el router está configurado en modo beacon
 export wifi_beacon_SSID=gennion_test
@@ -11,7 +11,7 @@ export wifi_client_SSID=Gennion
 export wifi_client_PASS=61358805
 
 #server settings
-export serverUser=root
+export serverUser=router
 export serverUrl=nutshell.gennion.com
 
 
