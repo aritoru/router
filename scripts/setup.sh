@@ -4,9 +4,9 @@
 . ./config.sh
 
 # Replace Variables
-
 echo 'Replacing Variables...'
 sed -i "s/%%WIFI_BEACON_SSID%%/${wifi_beacon_SSID}/" wireless
+sed -i "s/%%WIFI_BEACON_TXPOWER%%/${wifi_beacon_TXPOWER}/" wireless
 
 sed -i "s/%%WIFI_CLIENT_PASS%%/${wifi_client_PASS}/" wireless-client
 sed -i "s/%%WIFI_CLIENT_SSID%%/${wifi_client_SSID}/" wireless-client

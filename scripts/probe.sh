@@ -3,11 +3,13 @@
 # Import vars
 . ./config.sh
 
+# Increment Sequence
+sh set-sequence.sh
+
+
 # Log TCPDUMP launch
 sh log-tcpdump.sh
 
-# Increment Sequence
-sh set-sequence.sh
 
 # Add a wifi interface with "monitor" enabled
 iw dev wlan0 interface add fish0 type monitor flags none
@@ -20,7 +22,7 @@ extension=".log"
 prepend="probe_"
 separator="_"
 
-#Prepare Folders
+# Prepare Folders
 nowFile=$path$prepend$sequence$separator$fileDate$separator$router_ID$extension
 
 mv /mnt/share/now/* /mnt/share/old/

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Log reboot
+sh log-filedump.sh
+
 #Stop sniffer
 sh stop.sh
 sh connect-as-client.sh

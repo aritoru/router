@@ -8,7 +8,7 @@ config wifi-device 'radio0'
 	option country 'RO'
 	list ht_capab 'SHORT-GI-20'
 	list ht_capab 'SHORT-GI-40'
-	option txpower '0'
+	option txpower '%%WIFI_BEACON_TXPOWER%%'
 
 config wifi-iface
 	option device 'radio0'
